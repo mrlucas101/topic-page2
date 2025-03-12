@@ -27,6 +27,7 @@ a {
     margin-right: auto;
     display: flex;
     align-items: center;
+    padding-left: 12px;
 }
 
 .logo img {
@@ -40,10 +41,33 @@ header {
     justify-content: flex-end;
 }
 
-header, nav, .logo, .logo img, a, li, h3, .nav_menu {
+header, nav, .logo, .logo img, a, li, h3, .nav_menu, i {
     background-color: #222222;
 }
 
 h3 {
     color: white;
+}
+
+.nav_menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav_menu li {
+    display: flex;
+    align-items: center;
+}
+
+.nav_menu a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    gap: 5px;
+}
+
+.nav_menu a:hover {
+    color: gray;
+    transition: 0.2s ease;
 }
