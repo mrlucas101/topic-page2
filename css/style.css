@@ -2,7 +2,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: white;
+}
+
+body {
+    background-color: #e5e5f7;
 }
 
 li {
@@ -38,10 +41,9 @@ a {
 
 header {
     display: flex;
-    justify-content: flex-end;
 }
 
-header, nav, .logo, .logo img, a, li, h3, .nav_menu, i {
+header, nav, .logo, .logo img, a, li, .nav_menu, i {
     background-color: #222222;
 }
 
@@ -71,3 +73,225 @@ h3 {
     color: gray;
     transition: 0.2s ease;
 }
+
+.heromain {
+    background-image: url(../images/heroimage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60vh;
+    min-height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.herocontent {
+    color: white;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    filter: drop-shadow(5px 5px 2px #313131);
+}
+
+.herocontent h1 {
+    font-family: 'IM Fell English SC', sans-serif;
+    font-size: 75px;
+}
+
+.herocontent h2 {
+    font-family: 'Varela', sans-serif;
+    font-size: 20px;
+}
+
+
+
+
+.info-sections {
+    padding: 50px 20px;
+    background-color: #6e6e6e;
+}
+
+.info-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 30px;
+}
+
+.info-block.reverse {
+    flex-direction: row-reverse;
+}
+
+.info-block img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-text {
+    max-width: 600px;
+}
+
+.info-text h3 {
+    font-family: "IM Fell English SC", serif;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.info-text p {
+    font-family: "Varela", sans-serif;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+}
+
+
+
+
+.info-sections {
+    padding: 50px 20px;
+    background-color: #edebeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.info-block.reverse {
+    flex-direction: row-reverse;
+}
+
+.info-block img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-text {
+    max-width: 600px;
+}
+
+.info-text h3 {
+    font-family: "IM Fell English SC", serif;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.info-text p {
+    font-family: "Varela", sans-serif;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.mcontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px 0px;
+    font-family: "Varela", sans-serif;
+    background-color: #edebeb;
+}
+
+.sectionbutton {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #222222;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Varela', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+
+}
+
+.sectionbutton:hover {
+    background-color: #444444;
+}
+
+
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-family: "Varela", sans-serif;
+    color: #f8f8f8
+}
+
+.footer {
+    background-color: #222222;
+}
+
+@media (max-width: 768px) {
+    .info-block {
+        flex-direction: column !important;
+        text-align: center;
+    }
+ 
+    .info-block img {
+        width: 90%;
+        max-width: 350px;
+    }
+ 
+    .info-text {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+ 
+    .herocontent h1 {
+        font-size: 48px;
+    }
+ 
+    .herocontent h2 {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+ 
+    .nav_menu {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 12px;
+    }
+ 
+    .nav_menu li {
+        margin-top: 10px;
+    }
+ 
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+ 
+    .logo {
+        justify-content: flex-start;
+        padding-left: 12px;
+    }
+ 
+    .mcontent {
+        padding: 30px 10px 0;
+        font-size: 16px;
+    }
+ }
+ 
+
